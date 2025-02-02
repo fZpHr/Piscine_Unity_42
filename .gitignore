@@ -35,17 +35,17 @@ $RECYCLE.BIN/
 # =============== # Unity specific # ===============
 
 # Ignore the main Library folder
-/[Ll]ibrary/
+**/[Ll]ibrary/
 
 # Cache and temporary files
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Bb]uild/
+**/[Bb]uilds/
+**/[Ll]ogs/
 
 # Auto-generated VS/JetBrains Rider files
-/[Uu]ser[Ss]ettings/
+**/[Uu]ser[Ss]ettings/
 *.csproj
 *.unityproj
 *.sln
@@ -56,7 +56,13 @@ $RECYCLE.BIN/
 *.mdb
 
 # Memory caches
-/[Mm]emoryCaptures/
+**/[Mm]emoryCaptures/
+
+# Asset meta data
+**/[Aa]ssets/**/*.meta
+
+# Unity3D generated file on crash reports
+sysinfo.txt
 
 # =============== # Other dependencies # ===============
 
@@ -82,5 +88,5 @@ yarn.lock
 crash-reports/
 
 # =============== # Optional: Addressables # ===============
-/[Aa]sset[Bb]undles/
-/[Aa]ddressable[Aa]ssets[Dd]ata/
+**/[Aa]sset[Bb]undles/
+**/[Aa]ddressable[Aa]ssets[Dd]ata/
